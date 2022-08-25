@@ -20,7 +20,14 @@ set nocompatible
 set shiftwidth=2
 " Set tab stop to 2
 set tabstop=2
-colorscheme monokai
+
+set noshiftround
+set formatoptions=tcqrn1
+set softtabstop=2
+
+colorscheme molokai
+set mouse+=a
+
 set number
 execute pathogen#infect()
 autocmd VimEnter * NERDTree | wincmd p
@@ -29,15 +36,21 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:JavaComplete_ClosingBrace = 1
 let g:rainbow_active = 1
-let g:rainbow_load_separately = [
-    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
-    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
-    \ ]
-
-let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
-let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
-
 let delimitMate_expand_cr = 1
 
+" The following change the backspace on old Windows machine
+set t_kb=
+abbr psvm public static void main(String[] args){<CR>}<esc>O
+abbr sout System.out.println("");<esc>2hi
+
+abbr forl for (int i = 0; i < ; i++) {<esc>7hi
+abbr tryb try {<CR>} catch (Exception ex) {<CR> ex.printStackTrace();<CR>}<esc>hx3ko
+abbr const public static final int
+abbr javadocs /** A factory method to initialize a Lazy object given a producer.<CR><CR>@param <S> the type of the value in the Lazy object <CR>@param producer the production function which will be called to initialize the value when needed <CR>@return new Lazy object containing the producer given <CR>/
+
+
+fun! FormatMyFile()
+  normal gg=G
+endfun
+
+command Format call FormatMyFile()
