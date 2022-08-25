@@ -29,14 +29,6 @@ colorscheme molokai
 set mouse+=a
 
 set number
-execute pathogen#infect()
-autocmd VimEnter * NERDTree | wincmd p
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |   
-  \ quit | endif
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-let g:JavaComplete_ClosingBrace = 1
-let g:rainbow_active = 1
-let delimitMate_expand_cr = 1
 
 " The following change the backspace on old Windows machine
 set t_kb=
