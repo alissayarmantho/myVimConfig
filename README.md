@@ -17,9 +17,9 @@ Note:
 Linux commands:
 
 1. cd is to change directory
-2. cp is to copy file, the format is cp <file you want to copy> <destination directory>
+2. cp is to copy file, the format is cp [file you want to copy] [destination directory]
 3. cp -r means to copy recursively (for copying folders)
 4. ls to list all files/folder in the folder you are currently in
 5. ls -a to list all files/folder in the folder you are currently in + hidden files/folder
 6. source ~/.bashrc if you made any changes to .bashrc and you want to reflect it by reloading the .bashrc file
-7. mv to move file, the format is mv <file you want to move> <destination directory>
+7. mv to move file, the format is mv [file you want to move] [destination directory]
