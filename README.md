@@ -23,3 +23,9 @@ Linux commands:
 5. ls -a to list all files/folder in the folder you are currently in + hidden files/folder
 6. source ~/.bashrc if you made any changes to .bashrc and you want to reflect it by reloading the .bashrc file
 7. mv to move file, the format is mv [file you want to move] [destination directory]
+
+What you will get from this:
+1. Colorscheme
+2. Mouse support for vim
+3. Auto-closing brackets + different color brackets 
+4. Folder navigator
