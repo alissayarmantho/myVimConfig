@@ -1,16 +1,23 @@
 If you are in PE node:
 
-1. Clone this repo
+On the remote server:
+1. git clone --recursive https://github.com/alissayarmantho/myVimConfig
 2. cd myVimConfig
 3. cp -r .vim ~
 4. cp .vimrc ~
+5. cp .bashrc ~
+6. source ~/.bashrc
 
 If you are not in PE node:
 
-1. Download zip from github
-2. Unzip
-3. scp the folder to the remote server eg. scp -r <folder> remoteserver:~
-4. Follow step 2 - 4 from the steps if you are in PE node
+In your computer (not remote server):
+1. Clone the repo: git clone --recursive https://github.com/alissayarmantho/myVimConfig
+2. scp the .vim folder to the remote server eg. scp -r [folder] remoteserver:~
+3. scp the .vimrc to the remote server eg. scp .vimrc remoteserver:~
+4. scp the .bashrc to the remote server eg. scp .bashrc remoteserver:~
+
+On the remote server:
+1. On the remote server, run: source ~/.bashrc
 
 Note:
 
