@@ -1,6 +1,6 @@
-If you are in PE node:
+If you are in PE/stu node:
 
-On the remote server:
+On the remote server(PE/stu):
 1. git clone --recursive https://github.com/alissayarmantho/myVimConfig
 2. cd myVimConfig
 3. cp -r .vim ~
@@ -8,7 +8,7 @@ On the remote server:
 5. cp .bashrc ~
 6. source ~/.bashrc
 
-If you are not in PE node:
+If you are not in PE/stu node:
 
 In your computer (not remote server):
 1. Clone the repo: git clone --recursive https://github.com/alissayarmantho/myVimConfig
