@@ -4,10 +4,12 @@ syntax on
 set autoindent
 set smartindent
 filetype plugin indent on
+" Uncomment only when you are in PE node eg. pe112
 " Turn on auto-backup before editing
-set backup
+" set backup
+" Uncomment only when you are in PE node eg. pe112
 " Use ~/.backup as the backup directory
-set backupdir=~/.backup
+" " set backupdir=~/.backup
 " Replace all tab with spaces
 set expandtab
 " Wrap long line at reasonable places (only affect 
